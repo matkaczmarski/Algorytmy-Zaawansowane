@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="graph">
-      <HintPath>..\..\..\..\..\Desktop\graph.dll</HintPath>
+      <HintPath>..\graph.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
