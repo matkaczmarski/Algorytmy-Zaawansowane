@@ -9,18 +9,19 @@ namespace algorytmy_zaawansowane
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            IGraph g = new AdjacencyMatrixGraph(true, 30);
-            for (int i = 0; i < g.VerticesCount; i++)
-            {
-                for (int j = 0; j < g.VerticesCount; j++)
-                {
-                    if (i != j)
-                        g.AddEdge(i, j);
-                }
-            }
+            IGraph g;
+            Parser parser = new Parser();
+            parser.LoadFile();
+            parser.loadGraph(out g);
 
+            if (g == null)
+            {
+                Console.WriteLine("Wystąpił błąd podczas generowania grafu");
+                return;
+            }
 
             int minFlow = int.MaxValue;
             int source = 0;
@@ -28,11 +29,10 @@ namespace algorytmy_zaawansowane
             {
                 if (i == source)
                     continue;
-                IGraph g2 = new AdjacencyMatrixGraph(true, 6);
+                IGraph g2 = new AdjacencyMatrixGraph(true, g.VerticesCount);
                 int flow = g.FordFulkersonMaxFlow(source, i, out g2);
                 if (flow <= minFlow)
                     minFlow = flow;
-                Console.WriteLine(i);
             }
 
             Console.WriteLine(minFlow);

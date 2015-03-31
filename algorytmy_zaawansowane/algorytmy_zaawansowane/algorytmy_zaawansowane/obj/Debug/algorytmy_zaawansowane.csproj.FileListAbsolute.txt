@@ -5,3 +5,10 @@ C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\algorytmy_zaawansowa
 C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.csprojResolveAssemblyReference.cache
 C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.exe
 C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.pdb
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\bin\Debug\algorytmy_zaawansowane.exe.config
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.exe
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.pdb
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\bin\Debug\algorytmy_zaawansowane.exe
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\bin\Debug\algorytmy_zaawansowane.pdb
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\bin\Debug\graph.dll
+C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\algorytmy_zaawansowane\obj\Debug\algorytmy_zaawansowane.csprojResolveAssemblyReference.cache
