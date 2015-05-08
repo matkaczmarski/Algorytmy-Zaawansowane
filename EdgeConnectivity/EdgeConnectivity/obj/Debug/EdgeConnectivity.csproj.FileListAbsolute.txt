@@ -1,0 +1,9 @@
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.exe.config
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.exe
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.pdb
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csprojResolveAssemblyReference.cache
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.MainForm.resources
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.Properties.Resources.resources
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csproj.GenerateResource.Cache
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.exe
+c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.pdb
