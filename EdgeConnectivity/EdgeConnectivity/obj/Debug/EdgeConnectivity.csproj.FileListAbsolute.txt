@@ -7,3 +7,12 @@ c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConn
 c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csproj.GenerateResource.Cache
 c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.exe
 c:\users\mateusz\documents\visual studio 2013\Projects\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.exe.config
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.exe
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.exe
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.MainForm.resources
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.Properties.Resources.resources
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csproj.GenerateResource.Cache
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csprojResolveAssemblyReference.cache

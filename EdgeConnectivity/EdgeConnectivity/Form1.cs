@@ -41,6 +41,8 @@ namespace EdgeConnectivity
                 graph = Graph.LoadGraph(fileName);
                 if (graph == null)
                     MessageBox.Show("Błąd wczytywnia grafu z pliku.");
+                int[,] m = (int[,])graph.matrix.Clone();
+                m[0, 0] = 0;
             }
         }
 

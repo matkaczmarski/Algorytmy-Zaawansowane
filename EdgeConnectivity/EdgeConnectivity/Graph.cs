@@ -19,7 +19,7 @@ namespace EdgeConnectivity
         /// <summary>
         /// Macierz incydencji opisywanego grafu.
         /// </summary>
-        private int[,] matrix;
+        public int[,] matrix;
 
         /// <summary>
         /// Liczba wierzchołków grafu.
@@ -152,6 +152,8 @@ namespace EdgeConnectivity
                 graph = new Graph(size);
                 for (int i = 1; i < lines.Length; i++)
                 {
+                    if (lines[i].Count() > 0 && lines[i][0] == '#')
+                        continue;
                     string[] parts = lines[i].Split(':');
                     int v1 = Int32.Parse(parts[0].Trim());
                     string[] rest = parts[1].Trim().Split(',');
@@ -168,7 +170,7 @@ namespace EdgeConnectivity
             {
                 MessageBox.Show(ex.Message);
                 return null;
-            }
+            }     
             return graph;
         }
 
