@@ -89,6 +89,41 @@ namespace EdgeConnectivity
         }
 
         /// <summary>
+        /// Sprawdza, czy istnieje ścieżka od źródła do ujścia w sieci rezydualnej.
+        /// </summary>
+        /// <param name="rGraph">Sieć rezydualna.</param>
+        /// <param name="s">Źródło.</param>
+        /// <param name="t">Ujście.</param>
+        /// <param name="parent">Znaleziona ścieżka.</param>
+        /// <returns>Informacja, czy znaleziono ścieżkę (true) czy też nie (false).</returns>
+        bool bfs(int[,] rGraph, int s, int t, int[] parent)
+        {
+            bool[] visited = new bool[VerticiesCount];
+
+            Queue<int> q = new Queue<int>();
+            q.Enqueue(s);
+            visited[s] = true;
+            parent[s] = -1;
+
+            while (q.Count > 0)
+            {
+                int u = q.Dequeue();
+
+                for (int v = 0; v < VerticiesCount; v++)
+                {
+                    if (visited[v] == false && rGraph[u, v] > 0)
+                    {
+                        q.Enqueue(v);
+                        parent[v] = u;
+                        visited[v] = true;
+                    }
+                }
+            }
+
+            return (visited[t] == true);
+        }
+
+        /// <summary>
         /// Znajduje wartość maksymalnego przepływu w grafie.
         /// </summary>
         /// <param name="s">Źródło.</param>
@@ -99,7 +134,36 @@ namespace EdgeConnectivity
             if (!CheckForValidIndex(s) || !CheckForValidIndex(t))
                 return -1;
 
-            return 0;
+            int u, v;
+            int[,] rGraph = new int[VerticiesCount, VerticiesCount];
+            for (u = 0; u < VerticiesCount; u++)
+                for (v = 0; v < VerticiesCount; v++)
+                    rGraph[u, v] = matrix[u, v];
+
+            int[] parent = new int[VerticiesCount];
+
+            int max_flow = 0;
+
+            while (bfs(rGraph, s, t, parent))
+            {
+                int path_flow = Int32.MaxValue;
+                for (v = t; v != s; v = parent[v])
+                {
+                    u = parent[v];
+                    path_flow = Math.Min(path_flow, rGraph[u, v]);
+                }
+
+                for (v = t; v != s; v = parent[v])
+                {
+                    u = parent[v];
+                    rGraph[u, v] -= path_flow;
+                    rGraph[v, u] += path_flow;
+                }
+
+                max_flow += path_flow;
+            }
+
+            return max_flow;
         }
 
         /// <summary>
