@@ -210,6 +210,11 @@ namespace EdgeConnectivity
             {
                 string[] lines = System.IO.File.ReadAllLines(filePath);
                 int size = Int32.Parse(lines[0].Trim());
+                if(size <= 0)
+                {
+                    MessageBox.Show("Ilość wierzchołków musi dodatnia!");
+                    return null;
+                }
                 graph = new Graph(size);
                 for (int i = 1; i < lines.Length; i++)
                 {
@@ -219,7 +224,10 @@ namespace EdgeConnectivity
                             continue;
                         string[] parts = lines[i].Split(':');
                         int v1 = Int32.Parse(parts[0].Trim());
-                        string[] rest = parts[1].Trim().Split(',');
+                        string trimmed = parts[1].Trim();
+                        if (trimmed == string.Empty)
+                            continue;
+                        string[] rest = trimmed.Split(',');
 
                         foreach (string v2_string in rest)
                         {
