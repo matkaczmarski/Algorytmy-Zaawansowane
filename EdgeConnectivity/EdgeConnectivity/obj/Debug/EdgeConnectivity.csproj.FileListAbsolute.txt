@@ -21,7 +21,6 @@ C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConne
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.pdb
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.exe
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Debug\EdgeConnectivity.pdb
-C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csprojResolveAssemblyReference.cache
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.MainForm.resources
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.Properties.Resources.resources
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Debug\EdgeConnectivity.csproj.GenerateResource.Cache
