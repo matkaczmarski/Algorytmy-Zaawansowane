@@ -189,10 +189,7 @@ namespace EdgeConnectivity
             {
                 if (t == s)
                     continue;
-
-                //tworzenie grafu, może coś pozmieniać?
                 Graph tmpGraph = Clone();
-
                 int maxFlow = tmpGraph.MaximumFlow(s, t);
                 minResult = maxFlow < minResult ? maxFlow : minResult;
             }
@@ -208,6 +205,7 @@ namespace EdgeConnectivity
         public static Graph LoadGraph(string filePath)
         {
             Graph graph;
+            List<int> linesSkipped = new List<int>();
             try
             {
                 string[] lines = System.IO.File.ReadAllLines(filePath);
@@ -215,17 +213,25 @@ namespace EdgeConnectivity
                 graph = new Graph(size);
                 for (int i = 1; i < lines.Length; i++)
                 {
-                    if (lines[i].Count() > 0 && lines[i][0] == '#')
-                        continue;
-                    string[] parts = lines[i].Split(':');
-                    int v1 = Int32.Parse(parts[0].Trim());
-                    string[] rest = parts[1].Trim().Split(',');
-
-                    foreach (string v2_string in rest)
+                    try
                     {
-                        int v2 = Int32.Parse(v2_string.Trim());
-                        graph.AddEdge(v1, v2);
-                        graph.AddEdge(v2, v1);
+                        if (lines[i].Count() > 0 && lines[i][0] == '#')
+                            continue;
+                        string[] parts = lines[i].Split(':');
+                        int v1 = Int32.Parse(parts[0].Trim());
+                        string[] rest = parts[1].Trim().Split(',');
+
+                        foreach (string v2_string in rest)
+                        {
+                            int v2 = Int32.Parse(v2_string.Trim());
+                            graph.AddEdge(v1, v2);
+                            graph.AddEdge(v2, v1);
+                        }
+                    }
+                    catch(Exception ex)
+                    {
+                        linesSkipped.Add(i+1);
+                        continue;
                     }
                 }
             }
@@ -233,7 +239,14 @@ namespace EdgeConnectivity
             {
                 MessageBox.Show(ex.Message);
                 return null;
-            }     
+            }
+            if(linesSkipped.Count > 0)
+            {
+                string linesNumbers = string.Empty;
+                foreach (int ln in linesSkipped)
+                    linesNumbers += (ln.ToString() + ", ");
+                MessageBox.Show("Pominięte linie podczas wczytania: " + linesNumbers);
+            }
             return graph;
         }
 

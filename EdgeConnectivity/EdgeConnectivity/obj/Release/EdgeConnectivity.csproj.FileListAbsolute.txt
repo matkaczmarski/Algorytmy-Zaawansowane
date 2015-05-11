@@ -6,3 +6,12 @@ C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConne
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.csproj.GenerateResource.Cache
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.exe
 C:\Users\Kuba\Documents\GitHub\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Release\EdgeConnectivity.exe.config
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.exe
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Release\EdgeConnectivity.exe
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\bin\Release\EdgeConnectivity.pdb
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.MainForm.resources
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.Properties.Resources.resources
+C:\Users\Mateusz\Desktop\repozytoria\Algorytmy-Zaawansowane\EdgeConnectivity\EdgeConnectivity\obj\Release\EdgeConnectivity.csproj.GenerateResource.Cache
