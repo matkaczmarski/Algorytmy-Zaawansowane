@@ -42,7 +42,7 @@ namespace EdgeConnectivity
         /// <returns>Informację, czy dodawanie krawędzi się powiodło (true) czy też nie (false).</returns>
         public bool AddEdge(int v1, int v2)
         {
-            if (!CheckForValidIndex(v1) || !CheckForValidIndex(v2))
+            if (!CheckForValidIndex(v1) || !CheckForValidIndex(v2) || v1 == v2)
                 return false;
             matrix[v1, v2] = UNWEIGHTED_EDGE;
             matrix[v2, v1] = UNWEIGHTED_EDGE;
@@ -232,8 +232,8 @@ namespace EdgeConnectivity
                         foreach (string v2_string in rest)
                         {
                             int v2 = Int32.Parse(v2_string.Trim());
-                            graph.AddEdge(v1, v2);
-                            graph.AddEdge(v2, v1);
+                            if(!graph.AddEdge(v1, v2) || !graph.AddEdge(v2, v1))
+                                MessageBox.Show("Wystąpił błąd podczas dodawania krawędzi o wierzchołkach " + v1 + "-" + v2 );
                         }
                     }
                     catch(Exception ex)
@@ -264,13 +264,14 @@ namespace EdgeConnectivity
         /// <param name="fileName">Ścieżka do pliku.</param>
         /// <param name="result">Wynik.</param>
         /// <returns>Informację, czy zapis do pliku powiódł się (true) czy też nie (false).</returns>
-        public static bool WriteToFile(string fileName, int result)
+        public static bool WriteToFile(string fileName, int result, string executionTime)
         {
             try
             {
                 using (StreamWriter writer = new StreamWriter(fileName, false))
                 {
                     writer.WriteLine("Uzyskana przez algorytm wartość spójności krawędziowej grafu wynosi: " + result);
+                    writer.WriteLine("Obliczenia trwały: " + executionTime);
                 }
                 return true;
             }

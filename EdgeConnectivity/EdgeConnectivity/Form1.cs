@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -52,9 +53,12 @@ namespace EdgeConnectivity
             else
             {
                 fileName = fileName.Replace(GRAPH_FILE_EXT, RESULT_FILE_EXT);
+                var watch = Stopwatch.StartNew();
                 int result = graph.EdgeConnectivity();
-                if (Graph.WriteToFile(fileName, result))
-                    MessageBox.Show("Zakończono obliczenia i zapisano wynik do pliku: " + fileName);
+                watch.Stop();
+                string time = "godz: " + watch.Elapsed.Hours + ", min: " + watch.Elapsed.Minutes + ", s: " + watch.Elapsed.Seconds + ", ms: " + watch.Elapsed.Milliseconds;
+                if (Graph.WriteToFile(fileName, result, time))
+                    MessageBox.Show("Zakończono obliczenia i zapisano wynik do pliku: " + fileName + "\nUzyskany wynik: " + result + "\nCzas obliczeń: " + time);
                 else
                     MessageBox.Show("Błąd obliczenia lub zapisu do pliku.");
             }
